@@ -1,0 +1,20 @@
+@media (min-width: 320px) and (max-width: 600px) {
+
+	span {
+		font-size: 20px;
+	}
+
+	#telWrapper {
+		margin-bottom: 30px;
+		position: relative;
+	}
+
+	#textTitle {
+		font-size: 25px;
+		text-align: center;
+	}
+
+	#logoSvg {
+		width: 90vw;
+	}
+}

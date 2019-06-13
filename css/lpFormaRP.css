@@ -1,0 +1,121 @@
+body {
+	font-family: 'Titillium Web', sans-serif;
+	background-color: #000;
+}
+
+
+
+
+.fullContainer {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	background-image: url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	animation-name: fade;
+	transition: 0.5s ease all;
+	animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+}
+
+
+#logoSvg {
+	width: 60vw;
+	display: block;
+	position: relative;
+	filter: drop-shadow(0 0 30px #000);
+}
+
+
+#bgSvg {
+	position: absolute;
+	width: 100vw;
+	bottom: 0;
+}
+
+span {
+	color: #f2a322;
+	font-size: 30px;
+	line-height: 1.5;
+}
+
+#textsWrapper {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+#textTitle {
+	font-size: 40px;
+	font-weight: 100;
+	margin: 50px auto;
+	display: block;
+	position: relative;
+	text-align: center;
+}
+
+.btnsWrapper {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+}
+
+#faceSvg {
+	margin-left: 30px;
+}
+
+#telWrapper, #emailWrapper {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
+#telWrapper svg, #emailWrapper svg {
+	margin-right: 10px;
+}
+
+.svgHoverBg {
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.svgHoverBg:hover {
+	opacity: 0.6;
+	cursor: default;
+}
+
+h1 {
+	text-align: center;
+}
+
+a {
+	margin-top: 40px;
+	cursor: pointer;
+	z-index: 100;
+}
+
+
+
+@keyframes fade {
+	0% {
+		opacity: 0;
+	}
+	70% {
+		opacity: 0.7;
+	}
+	100% {
+		opacity: 1;
+	}
+}
